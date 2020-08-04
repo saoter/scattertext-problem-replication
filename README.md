@@ -5,9 +5,7 @@ Replication of my problems with Scattertext
 
 
 I want to compare two comapnies' patent activities by patent class. All patent classes (IPC column in scatter_IPC.csv) have four characters consisting letters and numbers, eg. F03D, F16F. My code is:
-
-#######################################################
-#######################################################
+```
 #######################################################
 CODE:
 !pip install scattertext
@@ -34,11 +32,18 @@ html = st.produce_scattertext_explorer(
     transform=st.Scalers.dense_rank
 )
 open('./demo_compact.html', 'w').write(html)
-
 #######################################################
-#######################################################
-#######################################################
+```
 
 
 The result is:
+
+![GitHub Logo](/images/scattertext.png)
+Format: ![Alt Text](url)
+
+
+I don't know why some IPC classes aren't shown as it should, eg. k, g m. 
+
+
+Any Idea? 
 
