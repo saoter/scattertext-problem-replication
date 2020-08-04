@@ -38,8 +38,7 @@ open('./demo_compact.html', 'w').write(html)
 
 The result is:
 
-![GitHub Logo](/images/scattertext.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/scattertext.PNG)
 
 
 I don't know why some IPC classes aren't shown as it should, eg. k, g m. 
